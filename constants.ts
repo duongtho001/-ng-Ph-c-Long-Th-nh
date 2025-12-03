@@ -59,46 +59,44 @@ export const CONTACT_INFO: ContactInfo = {
 export const HERO_SLIDES: HeroSlide[] = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1617154904033-668875c742c3?q=80&w=2670&auto=format&fit=crop',
-    alt: 'Toàn cảnh xưởng may hiện đại'
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=2680&auto=format&fit=crop',
+    alt: 'Veston và đồng phục công sở cao cấp'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2670&auto=format&fit=crop',
-    alt: 'Quy trình sản xuất chuyên nghiệp'
+    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=2670&auto=format&fit=crop',
+    alt: 'Áo sơ mi chuyên nghiệp'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1596207037748-0d1704aa8a76?q=80&w=2574&auto=format&fit=crop',
-    alt: 'Vải và nguyên liệu cao cấp'
+    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2574&auto=format&fit=crop',
+    alt: 'Bộ sưu tập thời trang đa dạng'
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1524255684952-d7185b509571?q=80&w=2574&auto=format&fit=crop',
-    alt: 'Đội ngũ thiết kế sáng tạo'
+    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2680&auto=format&fit=crop',
+    alt: 'Áo thun đồng phục năng động'
   },
   {
     id: 5,
-    image: 'https://images.unsplash.com/photo-1605289982774-9a6fef564df8?q=80&w=2564&auto=format&fit=crop',
-    alt: 'Công nghệ dệt may tiên tiến'
+    image: 'https://images.unsplash.com/photo-1584634731339-252c581abfc5?q=80&w=2671&auto=format&fit=crop',
+    alt: 'Đồng phục bảo hộ lao động'
   },
   {
     id: 6,
-    image: 'https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?q=80&w=2670&auto=format&fit=crop',
-    alt: 'Sản phẩm hoàn thiện chất lượng cao'
-  },
-  {
-    id: 7,
-    image: 'https://images.unsplash.com/photo-1534643960519-11ad79bc19df?q=80&w=2670&auto=format&fit=crop',
-    alt: 'Kho vải phong phú đa dạng'
+    image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2670&auto=format&fit=crop',
+    alt: 'Trang phục công sở thanh lịch'
   }
 ];
 
 export const IMAGES = {
-  heroBg: 'https://images.unsplash.com/photo-1617154904033-668875c742c3?q=80&w=2670&auto=format&fit=crop', // Kept for fallback if needed
+  heroBg: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=2680&auto=format&fit=crop', 
   about: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2670&auto=format&fit=crop',
   aboutHeroBg: 'https://images.unsplash.com/photo-1524255684952-d7185b509571?q=80&w=2574&auto=format&fit=crop',
-  introduction: 'https://images.unsplash.com/photo-1563121541-7649d0335759?q=80&w=2670&auto=format&fit=crop'
+  // Specific workshop images for the redesign
+  workshop1: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2000&auto=format&fit=crop', // Fabric warehouse
+  workshop2: 'https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=2000&auto=format&fit=crop', // Machinery
+  workshop3: 'https://sf-static.upanhlaylink.com/img/image_202512036a68a49bdd8fdae6709233b3a709be5c.jpg'  // Production floor (Updated)
 };
 
 export const SERVICE_HIGHLIGHTS: ServiceHighlight[] = [
@@ -220,7 +218,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: '8',
     title: 'Toàn cảnh xưởng sản xuất',
     category: 'workshop',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAaYMB_DtnoleQCsaSzVENjyFn-LKEMt5caiE31sNWZjBOrcXoro0vLsuaWumcTVJ4wxRxVbSYxlfEtbF0InDU0FbMO83lakXa8CaQOPFMoBuTdHhpb8Fpw8bWztklTyu0NcHreWxZ9sn3rwND2C3oBJvNa_ZxzGJGM9grDGyWYOfpfkmORh_AQ0OKr5F5uQ6cx0C4Fnuyb3o0fvg5AmvDBn4DiBe9SIHAWwbwL3k5TZ1u5e5KMzl4xNYdsY9zptRAaAcKIbeNZFo2Y'
+    image: 'https://sf-static.upanhlaylink.com/img/image_202512036a68a49bdd8fdae6709233b3a709be5c.jpg'
   },
   {
     id: '9',
