@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useCallback } from 'react';
 import { HERO_SLIDES } from '../constants';
 
@@ -65,21 +66,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - Always visible for better UX */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/20 text-white backdrop-blur-sm border border-white/10 hover:bg-primary hover:scale-110 transition-all duration-300 opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center shadow-lg"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 rounded-full bg-black/20 text-white backdrop-blur-sm border border-white/10 hover:bg-primary hover:scale-110 transition-all duration-300 shadow-lg flex items-center justify-center"
         aria-label="Previous slide"
       >
-        <span className="material-symbols-outlined text-3xl">chevron_left</span>
+        <span className="material-symbols-outlined text-2xl md:text-3xl">chevron_left</span>
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-black/20 text-white backdrop-blur-sm border border-white/10 hover:bg-primary hover:scale-110 transition-all duration-300 opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center shadow-lg"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 rounded-full bg-black/20 text-white backdrop-blur-sm border border-white/10 hover:bg-primary hover:scale-110 transition-all duration-300 shadow-lg flex items-center justify-center"
         aria-label="Next slide"
       >
-        <span className="material-symbols-outlined text-3xl">chevron_right</span>
+        <span className="material-symbols-outlined text-2xl md:text-3xl">chevron_right</span>
       </button>
 
       {/* Content Layer */}

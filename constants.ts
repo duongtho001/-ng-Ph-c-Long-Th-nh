@@ -76,6 +76,21 @@ export const HERO_SLIDES: HeroSlide[] = [
     id: 4,
     image: 'https://images.unsplash.com/photo-1524255684952-d7185b509571?q=80&w=2574&auto=format&fit=crop',
     alt: 'Đội ngũ thiết kế sáng tạo'
+  },
+  {
+    id: 5,
+    image: 'https://images.unsplash.com/photo-1605289982774-9a6fef564df8?q=80&w=2564&auto=format&fit=crop',
+    alt: 'Công nghệ dệt may tiên tiến'
+  },
+  {
+    id: 6,
+    image: 'https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?q=80&w=2670&auto=format&fit=crop',
+    alt: 'Sản phẩm hoàn thiện chất lượng cao'
+  },
+  {
+    id: 7,
+    image: 'https://images.unsplash.com/photo-1534643960519-11ad79bc19df?q=80&w=2670&auto=format&fit=crop',
+    alt: 'Kho vải phong phú đa dạng'
   }
 ];
 
