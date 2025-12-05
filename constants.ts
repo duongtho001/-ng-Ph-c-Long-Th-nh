@@ -240,12 +240,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBejNflWMHw1bHNE1TT97AZIc4AUi3S0-1cXE40m5nPnB_WrrPNfg3CIpx6DzvtzK1HX-FV1qqaBwEEBCZ4thn2glt7AsQiQpEMaWo_zd8qLgy5SVa5RQnp9Vya8R2F-P5MuX69UJemsgsBygQTCVKvfeH_fnEwLJEhBXukRuKibdUMnFn11Atdc-4XtZLTyRCFOEzPQhR4OwbBKM_3RSc6XZ6zY665WZ6ZqaDKA9Qgwi9OgICzY-Bd3wpmTD8p-wt40I8nRETEtm03'
   },
   {
-    id: '3',
-    title: 'Áo sơ mi thành phẩm',
-    category: 'product',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDp7V3Hp2AZLNBzIHzAX-90ZMS8f3IkbLH0dKU93_ALz2m1I0d-SIodlFzYzJBkRQSmZfj2RVSUnztWNfrmWl4XH_CpSqMOg1o8umMwocz4hdVLIRpz9RRvN_aQ4Rkt_ogdpdWl4mn-qXkRPit1jnDUR1zbNKfNGWEzspwHpQAGDDXnELbpQdFjhAAKgRZezYtD-480V2qqjHBRhEQx0j2lRaAn5-OqQe149iEIfs22yzIPMQXwWKWBOJ94hA8rma8LP8LfuCf57wXr'
-  },
-  {
     id: '4',
     title: 'Công nhân đang làm việc',
     category: 'workshop',
@@ -264,22 +258,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZNQKs8GhA6_XSK-8sYJxYJkpY1ZcxHqYEI1gs9CPoTxDpJF4dXeN-5g_I24olnCrofoF_3u6MQrPcOG3bHL6V_BpmztH5K3DIwHHew1ue-zqUqIBp6BDjnQe0j_u1i1WiW5E-nK8QWG6wVvFyJSmGStJYxlZj7zBMO0u2c8FgppfI9jefWyObG5ph7XWleC25dsdZlqNUTgYcOhIt3OnWgdnwG4aAQIQNomZ9gkaZDujOMSeaDv4j0a-bvxKpNnrBqykpoKyjJaMk'
   },
   {
-    id: '7',
-    title: 'Bộ sưu tập áo khoác mới',
-    category: 'product',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCWFWkdg3_dl6lKwByDRuu_gWD3jrXLdk9EYBwlCsOLUMxj0HInKq983cvZmNogQhTn_xYL-5LAEjD62LB3WsCYij7mtFNewD9siDQhaKn5LUygwQrktxzWPwnn9D0vIaXm-wbMHYCV7d_IRvWrIM8Vq8CfDdc2tCyC8MeUgTfltj039UXxUo_18f0e6jYxSG3jWHhXEi-E-rLzg-vLv2EfsvjeLAu2d2uWaqdp9oJiEj6Gh-1l1CVEUS5gI_LRF3EdOU7ji2REd92j'
-  },
-  {
     id: '8',
     title: 'Toàn cảnh xưởng sản xuất',
     category: 'workshop',
     image: 'https://sf-static.upanhlaylink.com/img/image_202512036a68a49bdd8fdae6709233b3a709be5c.jpg'
-  },
-  {
-    id: '9',
-    title: 'Chi tiết đường may tinh xảo',
-    category: 'product',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBR-3J7r_SeAdPb78tlK6E_gtksb0NoWv1qFrTro2wKciKM-Z8kXqNtp_B0VsAAjmKX3lEDr2SIo9G53vBimkUxsYnez_7Kb2YH6vNx8MeqcpvEgRG7dmiM3evNMqeQ2gJqWW80ODBCzHNlTOb-L8NLcAfPtncW8GZ8f6qzTEenveweDouJsUoPcd7KzREXA7wBKJ5e0VX_4xMc9hE5Sg04b24tN2JTHk5yu0u8jJoeHBiK7R3JYvfVLtavidCoIiDAnzYFNi9YezcO'
   },
   {
     id: '10',
@@ -298,6 +280,55 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Vải nguyên liệu cao cấp',
     category: 'workshop',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCKJ02XTFyG52zjrYWVf8tYRZYmwBkRocWDajl1GE0TAp8b96RzgPKSGfr_mZE4rdWrVGARAAZuVs3Mrz1IrD_LFOtDi36dNloC1_G-w45hDL-2KkKCSjFX_v1pgryqHOZftYVtjb6Ws3JprmWrYuERkIQ_BIITYUZGtUdKuGpc5hZty5Ebm7abgONPSs3JC0z5OCoLevjc0N5JajM6rCQAojJ_gn-At3Lxb8mWWWiyY1GBoOI2y-PcgXCZZCqyQ0Bjmsuj8ZC3dijR'
+  },
+  // Added Home Categories to Gallery
+  {
+    id: '13',
+    title: 'Đồng phục công ty',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgf4_EZ4pkRHpYS0E3tripy5LKK3ZKA1ZWTK6a7mCyn4_IAYRQv5RzFG76USTo49SfRlDrNviJ94-mbNjt_quFObAsKb_6a2jWEAVbN0cEKo4Z1idYbFFCNsTKgLRLdT9-d42F2bYyRUreljiUozKOTcY61o7jBIVjFc5cdSyHqtwYz7TLoX7ycA3Q_W2CDdliGcV4_OfcMAOLoPCkkhUnd6y4kLrEwJ06f9bVdmwVV-4xPD1J5SiQbBvu9f0BnAqo7N4YgKBoBIHJ'
+  },
+  {
+    id: '14',
+    title: 'Đồng phục công sở',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDSgFEESkBjEXFrhRdXSw2LKY4OMnW2X-1LxqqRDjfH913bUHNHCWogrV4aHGSl3w3LAHVGA1bwv_PBUn_habtzA15OLq7E1i8N-IwHk7ynk-2dAqP7K_PcCVWddXRFEzSMvQS3nHXSl5KriRb-IOcKGnPB5nQSWi6YJdwKilwPpJT1B8TCCJSJ65veH0UW_HTtxrJ6eovS1dwcKCe73vQMTrbsmDpJq5zy1u4XxqW4aDxBzHOfTWI8Jf37NDmB5mw6zdP-gtADJwrn'
+  },
+  {
+    id: '15',
+    title: 'Bảo hộ lao động',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBKIujAaVYk9AwtSHwm-NIKiPG9_Hoe04bkr1EVUbUaOvJfwr7abQ8W4_yVX-vLkxluTeFbA9rrUorWRAHUNZ0pstjxflyOllaJZ4_ibtFR8czAVG2X81beDYOKTTJttLpeKJL5HSrNu75O-l_OQQM7fb4ci76gJoO_qlksqcjTsSBnaZOg9SHZyydLN-hHzldUJ7ld9Q2meptvGsX6uqTW7kmdZ5OOtq0QVBu7X87uiJUkUtznS0Qq8P877tTPT3qt1000O4olOId5'
+  },
+  {
+    id: '16',
+    title: 'Đồng phục Teambuilding',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA9TbtIseqKpq-lXyDIhru00BVsKEOSIiAGmeGBu2RsNBVekHXqFjBuIjqMwCzrLLV7HoMpgzlGp-CQtV3ZHPef_OmPMQXx9u4GlFh79LEafUTnvpVluWzjjGucctdBQGdGTfvrDgehCuxJLZJIkWnC8SSlNuyAPvyCHeLYqSMZfmwdp20Nr1soMlbSND_R55_jpkRN1YxJX0wSdxo9cwdSNfu2KBltjmKiTr1GOwh6Mk8WBcwKYKdozt1ueC2DtSm0eDSKg891btw-'
+  },
+  {
+    id: '17',
+    title: 'Áo polo đồng phục',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC6f9OvYQ4u22LGte180h41rgmMI2C93X1Ofoua6Od4woh8sDAtmW1geAh95lfXXSYYEwXdeGjOFbCq4fiffknhz03eN7_ZsobSUi4ofw8uXs2yIgCkZ-IwNaZHoCERvZ2curOf3Kw4_ELJ4chHo76eng6YHMaIGFab_gXWEWmdGZX0J-MG0hqvJFRS7J0bHCkeW2_iVpDRSKPgXMpw8viyyZmm2RgLbX0-Rz9BcP37Ci6eWW_ifoh-wQveNaiPUhztIJXK_CZf1J-c'
+  },
+  {
+    id: '18',
+    title: 'Áo phông cổ tròn',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuARY3qaxaIugSj_6NF6Mxs9yvDZgr0lNXpbKk0EEK5-7-EFyS9tkzfGo7we09V63US9XzCB82nfLgEVOsKpQQ1pGilUULYOKwz4FlPQACg4lSEADvWQHNnfNvmrgK8VzWYeSXptRCQCuoLsOlAvRr6Onk5a1LA5mKipmcOC04nMWk4foHm5_hnVwbVrqC_euTUGwx3GLAfAm0ayQ40TaAR8xCEA5ktm0w06EFRrCYX0SzS5Q9oghWMFa90S5tjm8ui8SFCxCacmglWD'
+  },
+  {
+    id: '19',
+    title: 'Áo khoác đồng phục',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAv3y3uaWkVhCG_rhdRhjOYhiSr9TuzrhDiup5l5Nww6meRkbOzDlUBFz9j9pId6gHcxZOaug18XhRDaAl1iEZa7p0WXctkF_fBiBIjEVKcdptoBhIlyX_NcNw7PZ2zv8j409UXydGLphako6PSQypuQ2zajqzhvuzY4ohlW3f6zFZw8lb63GIKbVBUZu_VZNoaaM4lHtH1_Fri9uusqNP3JYAmHVWTsIuuEM00zy9YSCho5OhYM12lpMWeVUZMr5japYIWbxxAt6fA'
+  },
+  {
+    id: '20',
+    title: 'Áo giải chạy bộ',
+    category: 'product',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCn9SAR_XJTC3BhXWGYlnGZonFnh3y8hLiyGO0Zvo89TPh9XIsc0JJvYje8PtCxdKgxmNX7cNQlkD_GehMQsciNCt8w0YXs2G3tBNTvubLtZfNL02MmfCRg95nKkJ9oItQMvaSiciaXeizBOXbw1Elc_j1xmsKb1FpOy63DhF-zryPrCQultvp_dl424VNV4L08AU2VrtF0NLr5tJqJYmOP2c3r7i56hZPWN6NxU1xGfCsV3xstSmJ21iGnKgmA34YQko3kMMMv3c63'
   }
 ];
 
