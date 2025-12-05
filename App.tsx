@@ -1,12 +1,16 @@
+
 import React, { useState } from 'react';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 // Home Page Components
-import HeroSection from './components/HeroSection';
-import FeatureSection from './components/FeatureSection';
-import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
+import HomeHero from './components/HomeHero';
+import HomeFeatured from './components/HomeFeatured';
+import HomeNewCollections from './components/HomeNewCollections';
+import HomeCategoryGrid from './components/HomeCategoryGrid';
+import HomeVideoSection from './components/HomeVideoSection';
+import HomeNewsSection from './components/HomeNewsSection';
+import NewsDetailPage from './components/NewsDetailPage';
 
 // About Page Components
 import AboutHero from './components/AboutHero';
@@ -24,11 +28,24 @@ import ProductGallery from './components/ProductGallery';
 import GalleryHero from './components/GalleryHero';
 import ImageLibrary from './components/ImageLibrary';
 
+// News Page Components
+import NewsHero from './components/NewsHero';
+import NewsPage from './components/NewsPage';
+
 // Contact Page Component
 import ContactPage from './components/ContactPage';
 
+import { HOME_IMAGES, LATEST_NEWS } from './constants';
+
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
+  const [selectedNewsId, setSelectedNewsId] = useState<string | null>(null);
+
+  const handleNewsClick = (newsId: string) => {
+    setSelectedNewsId(newsId);
+    setCurrentPage('news-detail');
+    window.scrollTo(0, 0);
+  };
 
   const renderContent = () => {
     switch (currentPage) {
@@ -61,14 +78,35 @@ function App() {
         return (
           <ContactPage />
         );
+      case 'news':
+        return (
+          <>
+            <NewsHero />
+            <NewsPage onNewsClick={handleNewsClick} />
+          </>
+        );
+      case 'news-detail':
+        const newsItem = LATEST_NEWS.find(item => item.id === selectedNewsId);
+        if (!newsItem) return null; // Or a not found component
+        return (
+          <NewsDetailPage 
+            newsItem={newsItem} 
+            onBack={() => {
+              setCurrentPage('news'); // Go back to news list
+              window.scrollTo(0, 0);
+            }} 
+          />
+        );
       case 'home':
       default:
         return (
           <>
-            <HeroSection onNavigate={setCurrentPage} />
-            <FeatureSection />
-            <AboutSection />
-            <ServicesSection />
+            <HomeHero />
+            <HomeFeatured />
+            <HomeNewCollections />
+            <HomeCategoryGrid />
+            <HomeVideoSection />
+            <HomeNewsSection onNewsClick={handleNewsClick} />
           </>
         );
     }
@@ -82,26 +120,30 @@ function App() {
       </main>
       <Footer />
 
-      {/* Floating Chatbot-style Contact Button */}
-      <button
-        onClick={() => setCurrentPage('contact')}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-[0_0_20px_rgba(196,24,8,0.5)] hover:bg-red-700 hover:scale-110 transition-all duration-300 group"
-        aria-label="Liên hệ với chúng tôi"
-        title="Liên hệ ngay"
-      >
-        {/* Pulsing Ring Effect */}
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+      {/* Floating Buttons */}
+      <div className="fixed bottom-8 right-8 space-y-4 z-50">
+        <a 
+          href="https://zalo.me/0906029111" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 text-white flex items-center p-1 pr-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 group w-12 hover:w-56 overflow-hidden h-12"
+        >
+          <img 
+            alt="Zalo icon" 
+            className="w-10 h-10 flex-shrink-0 rounded-full" 
+            src={HOME_IMAGES.zaloIcon}
+          />
+          <span className="ml-3 font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">TƯ VẤN QUA ZALO</span>
+        </a>
         
-        {/* Icon */}
-        <span className="relative material-symbols-outlined text-3xl">
-          support_agent
-        </span>
-
-        {/* Tooltip Label */}
-        <div className="absolute right-full mr-3 hidden rounded-lg bg-white dark:bg-[#221110] px-3 py-2 text-sm font-bold text-primary shadow-lg group-hover:block whitespace-nowrap border border-primary/20 animate-fade-in-up">
-          Liên hệ tư vấn
-        </div>
-      </button>
+        <a 
+          href="tel:0906029111" 
+          className="bg-orange-500 text-white flex items-center p-2 pr-4 rounded-full shadow-lg hover:bg-orange-600 transition-all duration-300 group w-12 hover:w-[280px] overflow-hidden h-12 justify-center"
+        >
+          <span className="material-symbols-outlined text-3xl flex-shrink-0 animate-pulse">call</span>
+          <span className="ml-3 font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">0906.029.111 - 0965.709.601</span>
+        </a>
+      </div>
     </div>
   );
 }

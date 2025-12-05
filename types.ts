@@ -65,3 +65,25 @@ export interface HeroSlide {
   image: string;
   alt: string;
 }
+
+export interface HomeCollectionItem {
+  id: string;
+  image: string;
+  alt: string;
+}
+
+export interface HomeCategoryItem {
+  id: string;
+  label: string;
+  image: string;
+}
+
+export interface NewsItem {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  image: string;
+  category: string;
+  content: string;
+}
